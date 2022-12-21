@@ -23,7 +23,7 @@ const teamMembers = document.getElementById('team-members');
 
 
 //*ARRAY WITH EVERY TEAM MEMBER INFO
-const infoTeam = [
+const infoTeamArray = [
     {
         name : 'Wayne Barnet',
         role : 'Founder & CEO',
@@ -55,3 +55,10 @@ const infoTeam = [
         image : 'barbara-ramos-graphic-designerbarbara-ramos-graphic-designer.jpg',
     }
 ];
+
+for (let i = 0; i < infoTeamArray.length; i++){
+    const infoTeam = infoTeamArray[i];
+    console.log(infoTeam.name);
+    console.log(infoTeam.role);
+    console.log(infoTeam.image);
+}
