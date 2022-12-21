@@ -61,4 +61,5 @@ for (let i = 0; i < infoTeamArray.length; i++){
     console.log(infoTeam.name);
     console.log(infoTeam.role);
     console.log(infoTeam.image);
+    teamMembers.innerHTML += `${infoTeam.name} ${infoTeam.role} ${infoTeam.image}`;
 }
