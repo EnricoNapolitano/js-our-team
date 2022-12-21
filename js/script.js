@@ -1,4 +1,4 @@
-//* DOMS ELEMENTS
+//* DOMS ELEMENT
 const teamMembers = document.getElementById('team-members');
 
 
@@ -36,17 +36,17 @@ const infoTeamArray = [
     }
 ];
 
+let memberCard='';
 for (let i = 0; i < infoTeamArray.length; i++){
     const infoTeam = infoTeamArray[i];
-    console.log(infoTeam.name);
-    console.log(infoTeam.role);
-    console.log(infoTeam.image);
-    teamMembers.innerHTML +=
+    memberCard +=
     `<div class="col">
-        <div class="card">
-            <img src="${infoTeam.image}" alt="${infoTeam.image}">
-            <h3>${infoTeam.name}</h3>
-            <address>${infoTeam.role}</address>
-        </div>
+    <div class="card">
+    <img src="${infoTeam.image}" alt="${infoTeam.image}">
+    <h3>${infoTeam.name}</h3>
+    <address>${infoTeam.role}</address>
+    </div>
     </div> `;
 }
+
+teamMembers.innerHTML += memberCard;
